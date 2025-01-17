@@ -8,14 +8,14 @@ document.getElementById('wakeButton').addEventListener('click', function() {
     wakeButton.classList.add('disabled');
 
     // Показать сообщение о том, что кот услышал
-    message.textContent = 'Кот услышал и скоро проснется...';
+    message.textContent = 'Квизик услышал и скоро проснется...';
     sendGetRequest();
 
     // Через 30 секунд поменять изображение и сообщение
     setTimeout(function() {
         catImage.src = 'wakeupCat.jpeg'; // URL для изображения проснувшегося кота
-        catImage.alt = 'Проснувшийся кот';
-        message.textContent = 'Кот проснулся!';
+        catImage.alt = 'Проснувшийся Квизик';
+        message.textContent = 'Квизик проснулся!';
     }, 30000); // 30000 миллисекунд = 30 секунд
 });
 
