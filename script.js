@@ -1,6 +1,11 @@
 document.getElementById('wakeButton').addEventListener('click', function() {
     const catImage = document.getElementById('catImage');
     const message = document.getElementById('message');
+    const wakeButton = document.getElementById('wakeButton');
+
+    // Деактивировать кнопку и изменить её стиль
+    wakeButton.disabled = true;
+    wakeButton.classList.add('disabled');
 
     // Показать сообщение о том, что кот услышал
     message.textContent = 'Кот услышал и скоро проснется...';
