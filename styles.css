@@ -33,7 +33,7 @@ body {
     padding: 10px 20px;
     font-size: 18px;
     color: #fff;
-    background-color: #ff6b6b;
+    background-color: #e6c1c7;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -41,7 +41,7 @@ body {
 }
 
 .wake-button:hover {
-    background-color: #ff4c4c;
+    background-color: #2c5468;
 }
 
 .wake-button:disabled {
