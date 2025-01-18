@@ -16,7 +16,7 @@ document.getElementById('wakeButton').addEventListener('click', function() {
         catImage.src = 'wakeupCat.jpeg'; // URL для изображения проснувшегося кота
         catImage.alt = 'Проснувшийся Квизик';
         message.textContent = 'Квизик проснулся!';
-    }, 30000); // 30000 миллисекунд = 30 секунд
+    }, 20000); // 30000 миллисекунд = 30 секунд
 });
 
 function sendGetRequest() {
