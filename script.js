@@ -11,12 +11,18 @@ document.getElementById('wakeButton').addEventListener('click', function() {
     message.textContent = 'Квизик услышал и скоро проснется...';
     sendGetRequest();
 
-    // Через 30 секунд поменять изображение и сообщение
     setTimeout(function() {
         catImage.src = 'wakeupCat.jpeg'; // URL для изображения проснувшегося кота
+        catImage.alt = 'Просыпающийся Квизик';
+        message.textContent = 'Квизик просыпается! Еще совсем чуть-чуть';
+    }, 5000); // 5000 миллисекунд = 5 секунд
+
+    // Через 30 секунд поменять изображение и сообщение
+    setTimeout(function() {
+        catImage.src = 'workCat.jpeg'; // URL для изображения проснувшегося кота
         catImage.alt = 'Проснувшийся Квизик';
         message.textContent = 'Квизик проснулся!';
-    }, 20000); // 30000 миллисекунд = 30 секунд
+    }, 10000); // 10000 миллисекунд = 10 секунд
 });
 
 function sendGetRequest() {
