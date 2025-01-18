@@ -25,6 +25,9 @@ body {
 .cat-image {
     width: 100%;
     border-radius: 10px;
+    mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+    /* mask-image: linear-gradient(to right, transparent, black 60%, black 80%, transparent), 
+                  linear-gradient(to bottom, transparent, black 60%, black 80%, transparent); */
     transition: transform 0.3s ease;
 }
 
@@ -45,12 +48,12 @@ body {
 }
 
 .wake-button:disabled {
-    background-color: #ffb3b3; /* Бледный цвет для неактивной кнопки */
+    background-color: #e0c3c8; /* Бледный цвет для неактивной кнопки */
     cursor: not-allowed; /* Изменение курсора на "нельзя" */
 }
 
 .message {
     margin-top: 20px;
     font-size: 18px;
-    color: #333;
+    color: #2c5468;
 }
