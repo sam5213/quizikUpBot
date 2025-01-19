@@ -25,8 +25,8 @@ document.getElementById('wakeButton').addEventListener('click', function() {
     }, 9000); // 9000 миллисекунд = 9 секунд
 
     setTimeout(function() {
-        window.close();
-    }, 13500); // 13500 миллисекунд = 13.5 секунды
+        Telegram.WebApp.close();
+    }, 14000); // 14000 миллисекунд = 14 секунды
 });
 
 function sendGetRequest() {
