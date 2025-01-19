@@ -22,11 +22,11 @@ document.getElementById('wakeButton').addEventListener('click', function() {
         catImage.src = 'workCat.jpeg'; // URL для изображения проснувшегося кота
         catImage.alt = 'Проснувшийся Квизик';
         message.textContent = 'Квизик проснулся!';
-    }, 8000); // 8000 миллисекунд = 8 секунд
+    }, 9000); // 9000 миллисекунд = 9 секунд
 
     setTimeout(function() {
         window.close();
-    }, 1500); // 1500 миллисекунд = 1.5 секунды
+    }, 13500); // 13500 миллисекунд = 13.5 секунды
 });
 
 function sendGetRequest() {
