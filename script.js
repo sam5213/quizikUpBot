@@ -15,14 +15,18 @@ document.getElementById('wakeButton').addEventListener('click', function() {
         catImage.src = 'wakeupCat.jpeg'; // URL для изображения проснувшегося кота
         catImage.alt = 'Просыпающийся Квизик';
         message.textContent = 'Квизик просыпается! Еще совсем чуть-чуть';
-    }, 5000); // 5000 миллисекунд = 5 секунд
+    }, 4000); // 4000 миллисекунд = 4 секунд
 
     // Через 30 секунд поменять изображение и сообщение
     setTimeout(function() {
         catImage.src = 'workCat.jpeg'; // URL для изображения проснувшегося кота
         catImage.alt = 'Проснувшийся Квизик';
         message.textContent = 'Квизик проснулся!';
-    }, 10000); // 10000 миллисекунд = 10 секунд
+    }, 8000); // 8000 миллисекунд = 8 секунд
+
+    setTimeout(function() {
+        window.close();
+    }, 1500); // 1500 миллисекунд = 1.5 секунды
 });
 
 function sendGetRequest() {
