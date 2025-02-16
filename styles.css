@@ -57,3 +57,18 @@ body {
     font-size: 18px;
     color: #2c5468;
 }
+
+#progressContainer {
+    width: 100%;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#progressBar {
+    width: 0%;
+    height: 20px;
+    background-color: #4caf50;
+    transition: width 0.5s; /* Плавный переход */
+}
