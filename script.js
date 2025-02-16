@@ -22,7 +22,7 @@ document.getElementById('wakeButton').addEventListener('click', function() {
         if (progress >= 100) {
             clearInterval(interval);
         }
-    }, 800); // Обновляем каждые 800 миллисекунд
+    }, 1400); // Обновляем каждые 1400 миллисекунд
 
     setTimeout(function() {
         catImage.src = 'wakeupCat.jpeg'; // URL для изображения проснувшегося кота
