@@ -2,6 +2,7 @@ document.getElementById('wakeButton').addEventListener('click', function() {
     const catImage = document.getElementById('catImage');
     const message = document.getElementById('message');
     const wakeButton = document.getElementById('wakeButton');
+    const progressBar = document.getElementById('progressBar');
 
     // Деактивировать кнопку и изменить её стиль
     wakeButton.disabled = true;
@@ -10,6 +11,18 @@ document.getElementById('wakeButton').addEventListener('click', function() {
     // Показать сообщение о том, что кот услышал
     message.textContent = 'Квизик услышал и скоро проснется...';
     sendGetRequest();
+
+    // Обновление прогресс-бара
+    let progress = 0;
+    const interval = setInterval(function() {
+        progress += 10; // Увеличиваем прогресс на 10%
+        progressBar.style.width = progress + '%'; // Обновляем ширину прогресс-бара
+
+        // Если прогресс достиг 100%, останавливаем интервал
+        if (progress >= 100) {
+            clearInterval(interval);
+        }
+    }, 400); // Обновляем каждые 400 миллисекунд
 
     setTimeout(function() {
         catImage.src = 'wakeupCat.jpeg'; // URL для изображения проснувшегося кота
